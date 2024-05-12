@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Registration Form</title>
+    <style>
+        .header {
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            display: flex;
+            align-items: center;
+            background: #000;
+            color: rgb(183, 182, 182);
+
+        }
+
+        .headerLeft {
+            width: 220px;
+        }
+
+        .headerRight {
+            padding: 50px;
+            margin-left: 50px;
+        }
+
+        .img {
+            width: 100%;
+            padding: 0px 10px;
+        }
+
+        .heading {
+            color: orange;
+            font-size: 4vw;
+            margin: 0px;
+        }
+
+        .text {
+            font-size: 2vw;
+            text-align: center;
+        }
+
+
+        .body {
+            width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background: rgb(124, 209, 255);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 230px;
+
+        }
+
+
+
+        .formBox {
+            border-radius: 5px;
+            background: rgb(239, 241, 251);
+            display: flex;
+            justify-content: center;
+            width: 500px;
+
+        }
+
+        .details {
+            padding-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .a {
+            height: 30px;
+            width: 300px;
+            margin: 10px 0px;
+            border-radius: 4px;
+            border: none;
+            box-shadow: 5px 5px lightblue;
+        }
+
+        .buttonBox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .b {
+
+            /* background-color: green; */
+            border: none;
+            width: 100px;
+            height: 35px;
+            color: azure;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+            margin: 10px;
+        }
+
+        .b:hover {
+            opacity: 0.5;
+        }
+
+
+        .footer {
+            color: azure;
+            background: #000;
+            display: flex;
+            position: relative;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sec {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-size: 15px;
+        }
+
+        .container {
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: yellow; margin: 0px;">
+
+    <div class="header">
+        <div class="headerLeft">
+            <img class="img" src="vnps.png" alt="VNPS_Logo...">
+        </div>
+        <div class="headerRight">
+            <h1 class="heading">VIDYA NIKETAN PUBLIC SCHOOL</h1>
+            <div class="text">Play Gr., Nur., KG I-II & std Ist to std. 12th</div>
+        </div>
+    </div>
+
+    <div class="body">
+        <h1>|| UPDATE USER DATA ||</h1>
+        <div class="formBox">
+            <form action="delete" method="post" target="_blank">
+                <div class="details">
+                    <input class="a" type="text" name="name" placeholder="Full Name" >
+                    <input class="a" type="number" name="rollNo" placeholder="Roll Number">
+                    <!-- <input class="a" type="text" name="class" placeholder="Class">
+                    <input class="a" type="text" name="mName" placeholder="Mother Name">
+                    <input class="a" type="text" name="add" placeholder="Address">
+                    <input class="a" type="text" name="pNumber" placeholder="Parent Number">
+                    <input class="a" type="text" name="adhar" placeholder="Adhar Number"> -->
+                </div>
+                <div class="buttonBox">
+                    <button class="b" type="submit" style="background-color: green;">Delete</button>
+                    <button class="b" type="reset" style="background-color: red;">Reset</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="sec">
+            <div class="container">Address : 
+                <span>Near Bharat Driving School Kudwa</span>
+            </div>
+            <div class="container">City : Gondia</div>
+            <div class="container">State : Maharashtra</div>
+        </div>
+        <div class="sec">
+            <div class="container">Contact : 0000000000</div>
+            <div class="container"> Mail ID : Abcd@gmail.com </div>
+            <div class="container">Web Site : <a href="a.html">VNPS.com</a></div>
+        </div>
+        <div class="sec">
+            <div class="container">Location : <a href="https://maps.app.goo.gl/KwYckvV3gGVYKY6J6" target="_blank">Click
+                    hear for location in Map</a></div>
+        </div>
+    </div>
+</body>
+
+</html>
